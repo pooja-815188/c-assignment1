@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[20];
+    printf("enter a string\n");
+    scanf("%s",str);
+    int i=0,ovel=0,consonent=0;
+    while(str[i]!='\0')
+    {
+        switch(str[i])
+        {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':ovel++;
+                     break;
+            default:consonent++;
+        }
+        i++;
+    }
+    printf("ovel=%d\n",ovel);
+    printf("cons=%d\n",consonent);
+}
