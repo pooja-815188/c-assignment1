@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int n,i;
+    printf("enter a size\n");
+    scanf("%d",&n);
+    int p[n],q[n];
+    printf("enter a array elements\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&p[i]);
+    }
+    printf("array elements are\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\n",p[i]);
+    }
+    printf("copied array are\n");
+    for(i=0;i<n;i++)
+    {
+        q[i]=p[i];
+        printf("%d\n",q[i]);
+    }
+}
